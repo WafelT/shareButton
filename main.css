@@ -1,0 +1,93 @@
+body {
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #E5E5E5;
+  overflow: hidden;
+}
+
+.share__btn {
+  width: 318px;
+  height: 98px;
+
+  background-color: #E8F6F3;
+  border-radius: 50px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+  overflow: hidden;
+}
+
+.share__icon-wrapper {
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #A2D9CE;
+  border-radius: 50px;
+  cursor: pointer;
+
+  transition: transform .8s ease;
+  z-index: 10;
+}
+
+.share__icon {
+  opacity: 1;
+  transition: .4s ease;
+}
+
+.share__btn:hover .share__icon-wrapper {
+  transform: translateX(-101%);
+}
+
+.share__btn:hover .share__icon {
+  opacity: 0;
+  transform: rotate(40deg);
+}
+
+
+.share__social-icon {
+  width: 24px;
+  height: 24px;
+  
+  transition: .2s ease;
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+.share__btn:hover a {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.share__btn a:nth-of-type(1) {
+  transition-delay: 1s;
+}
+
+.share__btn a:nth-of-type(2) {
+  transition-delay: 0.8s;
+}
+
+.share__btn a:nth-of-type(3) {
+  transition-delay: 0.6s;
+}
+
+.share__btn a:nth-of-type(4) {
+  transition-delay: 0.4s;
+}
+
+.share__social-icon:not(:last-child) {
+  margin-right: 42px;
+}
